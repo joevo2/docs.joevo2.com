@@ -1,16 +1,20 @@
 ---
-description: Navigate using the left hand side panel
+description: >-
+  TLDR: Select workshop on the left panel or press button right at the bottom
+  for the first workshop/tutorial content
 ---
 
-# How to use this doc
+# How to use this workshop content
 
-## Can I become who I want to be?
+## Start
 
-That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+All workshop will have an overview and goals we wish to achieve at the end of the workshop. Please submit a GitHub issue or Pull Request if you see any error or improvement that could be made. 
 
-## Have you had a chance to answer the previous question?
+## During 
 
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+All workshop content will be provided with GitHub source code link for reference in case you are lost or could not get the intended result. You could always raise your hand and assistants will be right on your way or if you are too shy you can always tweet or message me at @joevo2
 
+## End 
 
+At the very least please press the happy, sad or speechless emoji thing to rate the content or submit a GitHub issue or Pull Request if you think the content can be further improved
 

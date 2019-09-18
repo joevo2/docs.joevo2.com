@@ -4,24 +4,18 @@ description: 'On iOS, Android and Web'
 
 # Creating your own Flappy Bird
 
-## Getting Super Powers
+## Goals 
 
-Becoming a super hero is a fairly straight forward process:
+1. Create your very first game using Expo
+2. Have your own GitHub repository of this app that you wrote yourself to showcase to the world or just brag during interview :D 
+3. Publish the app to a website or at least run it on your phone 
 
-```
-$ give me super-powers
-```
+## Overview
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
+* We will be using Expo as the main tools for us to create this application 
+* Most of the workshop content will be based on this [official tutorial](https://docs.expo.io/versions/v31.0.0/tutorials/create-floatyplane-game/) written by [@Baconbrix](https://twitter.com/Baconbrix). Do give him a tweet of appreciation :\) 
 
-Once you're strong enough, save the world:
+## Expectation from you
 
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
+* At least some basic understanding of programming is needed, preferably in JavaScript as this is the main language used throughout this course
 
