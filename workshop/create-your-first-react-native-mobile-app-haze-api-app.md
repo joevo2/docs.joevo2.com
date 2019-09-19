@@ -1,12 +1,12 @@
 ---
-description: Creating your own Haze Air Pollution Index mobile app
+description: Your own Haze Air Pollution Index mobile app
 ---
 
 # Create your first React Native mobile app - Haze API App
 
 ## Overview
 
-In this workshop we will be creating a React Native mobile app using Expo. We will use an API \(Application Programming Interface\) as the input/resources/database for the mobile application. The app would consume the JSON resources provided by the API to create a presentable interface where the user can check the daily haze Air Pollution Index in their mobile devices.
+In this workshop we will be developing a React Native mobile app using Expo. We will use an API \(Application Programming Interface\) as the input/resources/database for the mobile application. The app would consume the JSON resources provided by the API to create a presentable interface where the user can check the daily haze Air Pollution Index in their mobile devices.
 
 * We will be using [Expo Snack](http://snack.expo.io) online editor as the main tools to create this application.
 * We will need your iOS or Android phone installed with the[ Expo mobile app](https://expo.io/tools#client), so that the app can tested on your phone.
