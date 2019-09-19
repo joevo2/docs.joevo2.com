@@ -1,6 +1,6 @@
 # Table of contents
 
-* [How to use this workshop content](README.md)
+* [How to use the workshop content](README.md)
 
 ## Workshop
 

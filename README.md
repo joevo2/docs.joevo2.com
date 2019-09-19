@@ -4,7 +4,7 @@ description: >-
   for the first workshop/tutorial content
 ---
 
-# How to use this workshop content
+# How to use the workshop content
 
 ## Start
 
@@ -12,7 +12,7 @@ All workshop will have an overview and goals we wish to achieve at the end of th
 
 ## During 
 
-All workshop content will be provided with GitHub source code link for reference in case you are lost or could not get the intended result. You could always raise your hand and assistants will be right on your way or if you are too shy you can always tweet or message me at @joevo2
+All workshop content will be provided with GitHub source code link for reference in case you are lost or could not get the intended result. You could always raise your hand and assistants will be right on your way or if you are too shy you can always tweet or message me at [@joevo2](https://twitter.com/joevo2)
 
 ## End 
 
