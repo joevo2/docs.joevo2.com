@@ -37,3 +37,33 @@ Let's fire up [Expo Snack](http://snack.expo.io) and clone our first repository 
 
 * On the right panel you can press Run on your device and scan the QR code with the Expo app on your iOS/Android phone
 
+## What is JSON - JavaScript Object Notation
+
+{% code-tabs %}
+{% code-tabs-item title="Example AQI JSON response" %}
+```javascript
+{
+  "status": "ok",
+  "data": {
+    "aqi": 150,
+    "city": {
+      "geo": [
+        3.139003,
+        101.686855
+      ],
+      "name": "Kuala Lumpur",
+      "url": "https://aqicn.org/city/kuala-lumpur"
+    },
+    "time": {
+      "s": "2019-09-19 17:00:00",
+      "tz": "+08:00",
+      "v": 1568912400
+    }
+  }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
