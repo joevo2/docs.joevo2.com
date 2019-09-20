@@ -29,15 +29,14 @@ Doesn't know anything about programming? No worries! Armed with just some common
 1. Let's fire up[ Expo Snack](https://snack.expo.io/) to get started.
 2. We will be presented with `App.js` in the text editor area, and on the right you will see preview of your app. Where you can toggle between iOS, Android and Web. 
 3. To run your phone you can toggle it to iOS/Android and press the "Run on your device" , then scan the QR code using the installed [Expo app ](https://expo.io/tools#client)on your phone. 
-4. The top part consists all the imports, some are library installed using NPM which you can see in your `package.json` . Some are imported locally such as the `AssetExample` component. 
-5. In the `render()` function is where we have HTML-like syntax called JSX where we can create the screen for the app. Component such as `Text` , `View` can be imported from `react native` as shown in line 2. The full list of component can be referred at the[ official React Native documentation](https://facebook.github.io/react-native/docs/activityindicator).
+4. Referring to the code below, the top part consists all the imports, which consists all the library installed using NPM which you can see in your `package.json` . The rest are imported from other local file such as the `AssetExample` component. 
+5. In the `render()` function is where we have HTML-like syntax called JSX where we can create the user interface for the app. Component such as `Text` , `View` can be imported from `react native` as shown in line 2. The full list of component can be referred at the[ official React Native documentation](https://facebook.github.io/react-native/docs/activityindicator).
 6. From line 27 onward we can see the various of styling that has been set, and used by the `View` component in line 14 as such `View style={styles.container}>` . The styling syntax is similar to that of CSS but camel cased. The full list of supported styling can be referred [here](https://github.com/vhpoet/react-native-styling-cheat-sheet). 
 
 {% code-tabs %}
 {% code-tabs-item title="App.js" %}
 ```jsx
-import * as 
-from 'react';
+import * as from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
@@ -83,18 +82,37 @@ const styles = StyleSheet.create({
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-## What is React? 
+## What is React? What about React Native?
+
+> React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications, as it is optimal for fetching rapidly changing data that needs to be recorded
+
+In layman term, we can use React to build interactive interface where we can manipulate the data on the screen, fetch data from database etc. 
+
+In this workshop we will be using React Native instead React. React Native works the same as React but instead of using `div` and dealing with HTML, we would use React Native component like `View` and dealing with mobile app libraries.
+
+The added benefit of using React Native is that instead of using Swift and Kotlin/Java to develop iOS and Android app, we could use JavaScript instead where it will be compiled by React Native into the respective code.
 
 ## How do I manipulate data? 
 
 setState 
 
-form 
+simple form
 
-## How do I make an API call? 
+## How do I make an API \(Application Programming Inteface\) call? 
+
+### Register AQI API 
+
+1. You will need to register an account [here](https://aqicn.org/data-platform/token/#/) first to get access to the API
+2. You should receive a confirmation email with instruction on making a simple API call with your token
+3. You should be presented with a link as shown [`https://api.waqi.info/feed/kualalumpur/?token=yourTokenHere`](https://api.waqi.info/feed/beijing/?token=19833cdd959dbedc59e4fa3ceb1bfdfd0f7cd5c6) where you can get a JSON response.
+4. [Here](https://aqicn.org/json-api/doc/) is the full list of API you can give it a try.
 
 {% hint style="info" %}
-**What is JSON \(JavaScript Object Notation\)?**  
+**Token** is use to uniquely identify you and your application where usage will be recorded for analytics, security and billing purpose.
+{% endhint %}
+
+{% hint style="info" %}
+**JSON \(JavaScript Object Notation\)**  
 An open-standard file format that uses human-readable text to transmit data objects consisting of attribute–value pairs and array data types
 
 {% code-tabs %}
@@ -104,7 +122,6 @@ An open-standard file format that uses human-readable text to transmit data obje
   "status": "ok",
   "data": {
     "aqi": 150,
-
     "city": {
       "geo": [
         3.139003,
@@ -124,4 +141,16 @@ An open-standard file format that uses human-readable text to transmit data obje
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 {% endhint %}
+
+### Getting the data
+
+fetch JSON
+
+### Presenting the data 
+
+Show it in a nice card 
+
+## Workshop Evaluation
+
+Kindly fill up this [short survey](https://forms.gle/31dLHMfPog4kUGn38) so that we could further improve 😊
 

@@ -10,9 +10,11 @@ description: >-
 
 All workshop will have an overview and goals we wish to achieve at the end of the workshop. Please submit a GitHub issue or Pull Request if you see any error or improvement that could be made. 
 
+{% page-ref page="workshop/create-your-first-react-native-mobile-app-haze-api-app.md" %}
+
 ## During 
 
-All workshop content will be provided with GitHub source code link for reference in case you are lost or could not get the intended result. You could always raise your hand and assistants will be right on your way or if you are too shy you can always tweet or message me at [@joevo2](https://twitter.com/joevo2)
+Some workshop content will be provided with GitHub source code link for reference in case you are lost or could not get the intended result. You could always raise your hand and assistants will be right on your way or if you are too shy you can always tweet or message me at [@joevo2](https://twitter.com/joevo2)
 
 ## End 
 
