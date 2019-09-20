@@ -33,16 +33,9 @@ You can download the source code with Expo Snack and run it on your local machin
 
 ## Getting started
 
-Let's fire up [Expo Snack](http://snack.expo.io) and clone our first repository by clicking the ... icon and click import git repository.
+* Import this Git repo [`https://github.com/EvanBacon/react-flappy-bird`](https://github.com/EvanBacon/react-flappy-bird) using the guide shown below
 
-![](../.gitbook/assets/import-git-repo.PNG)
-
-* Paste this git repository link [`https://github.com/EvanBacon/react-flappy-bird`](https://github.com/EvanBacon/react-flappy-bird) and press the import button.
-* Press the add button on the lower left corner as shown below to add the PixiJS library into the project.
-
-![](../.gitbook/assets/add-pixi-to-package.PNG)
-
-* On the right panel you can press Run on your device and scan the QR code with the Expo app on your iOS/Android phone
+{% page-ref page="importing-git-repository-into-expo-snack.md" %}
 
 {% hint style="info" %}
 This guide is still a work in progress, do explore around the code and tweak around the value to understand how all the moving part works in the app.
