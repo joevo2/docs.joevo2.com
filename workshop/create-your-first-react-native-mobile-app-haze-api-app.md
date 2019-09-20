@@ -29,6 +29,9 @@ Doesn't know anything about programming? No worries! Armed with just some common
 1. Let's fire up[ Expo Snack](https://snack.expo.io/) to get started.
 2. We will be presented with `App.js` in the text editor area, and on the right you will see preview of your app. Where you can toggle between iOS, Android and Web. 
 3. To run your phone you can toggle it to iOS/Android and press the "Run on your device" , then scan the QR code using the installed [Expo app ](https://expo.io/tools#client)on your phone. 
+4. The top part consists all the imports, some are library installed using NPM which you can see in your `package.json` . Some are imported locally such as the `AssetExample` component. 
+5. In the `render()` function is where we have HTML-like syntax called JSX where we can create the screen for the app. Component such as `Text` , `View` can be imported from `react native` as shown in line 2. The full list of component can be referred at the[ official React Native documentation](https://facebook.github.io/react-native/docs/activityindicator).
+6. From line 27 onward we can see the various of styling that has been set, and used by the `View` component in line 14 as such `View style={styles.container}>` . The styling syntax is similar to that of CSS but camel cased. The full list of supported styling can be referred [here](https://github.com/vhpoet/react-native-styling-cheat-sheet). 
 
 {% code-tabs %}
 {% code-tabs-item title="App.js" %}
@@ -79,6 +82,16 @@ const styles = StyleSheet.create({
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
+
+## What is React? 
+
+## How do I manipulate data? 
+
+setState 
+
+form 
+
+## How do I make an API call? 
 
 {% hint style="info" %}
 **What is JSON \(JavaScript Object Notation\)?**  
