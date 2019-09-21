@@ -256,7 +256,7 @@ What you learnt here is applicable on both React Native development as well as w
 
 In this workshop we will be using a third party library called [react-native-paper](https://callstack.github.io/react-native-paper/card.html) where it provide us with Material Designed style component where we could present our data in a modern and presentable fashion.
 
-1. Try to have a concept of the user interface, you can sketch out your own or refer to other application. 
+1. Try to have a concept of the user interface, you can sketch out your own or refer to other application. You can have a look at [dribbble](https://dribbble.com/) for app design inspiration. Here's an [example](https://apps.apple.com/us/app/airvisual-air-quality-forecast/id1048912974) of a pretty good UI for have app. Feel free to search up and draft up your simple UI.
 2. After having your own concept of UI, try to create the component that are required in Snack Expo. 
 
 {% hint style="info" %}
