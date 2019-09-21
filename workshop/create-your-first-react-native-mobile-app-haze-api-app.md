@@ -94,9 +94,66 @@ The added benefit of using React Native is that instead of using Swift and Kotli
 
 ## How do I manipulate data? 
 
-setState 
+### State
 
-simple form
+React state allow us update a value efficiently in HTML DOM. As shown in the code below
+
+{% code-tabs %}
+{% code-tabs-item title="App.js" %}
+```jsx
+export default class App extends React.Component {
+  state = {
+    text: 'Testing',
+  };
+
+  onChangeText = incomingText => {
+    this.setState({ text: incomingText });
+  };
+
+  render() {
+    return (
+
+      <View style={styles.container}>
+        <Text style={styles.paragraph}>{this.state.text}</Text>
+        <TextInput
+          style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+          onChangeText={text => this.onChangeText(text)}
+        />
+      </View>
+    )
+  }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+### Props
+
+Props allow to pass value or even function to component we created. 
+
+{% code-tabs %}
+{% code-tabs-item title="App.js" %}
+```jsx
+class MyComponent extends React.Component { 
+  render() {
+    return (
+      <View>{this.props.text}</View>
+    )
+  }
+}
+
+export default class App extends React.Component 
+  render() {
+    return (
+      <View style={styles.container}>
+        <MyComponent text={new Date().toLocaleDateString()} />
+      </View>
+    );
+  }
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## How do I make an API \(Application Programming Inteface\) call? 
 
@@ -144,11 +201,83 @@ An open-standard file format that uses human-readable text to transmit data obje
 
 ### Getting the data
 
-fetch JSON
+To make an API call we would be using [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) which is built in and also commonly being used in modern browser.
+
+{% code-tabs %}
+{% code-tabs-item title="App.js" %}
+```jsx
+export default class App extends React.Component {
+  state = {
+    aqi: 0,
+    location: '',
+  };
+
+  componentDidMount() {
+    const location = 'kualalumpur'
+    const token = 'yourOwnTaken'
+    fetch(
+      `https://api.waqi.info/feed/${location}/?token=${token}`
+    )
+      .then(res => res.json())
+      .then(fetchedData => {
+        this.setState({
+          location: fetchedData.data.city.name,
+          aqi: fetchedData.data.aqi,
+        });
+      });
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text style={styles.paragraph}>{this.state.text}</Text>
+
+        <Text>{this.state.aqi}</Text>
+        <Text>{this.state.location}</Text>
+        
+      </View>
+    );
+  }
+}
+
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ### Presenting the data 
 
-Show it in a nice card 
+#### Flex
+
+In React Native we will be using Flex to layout our UI. Here's the [official documentation](https://facebook.github.io/react-native/docs/flexbox) where you could learn how to position any item anywhere with ease. 
+
+What you learnt here is applicable on both React Native development as well as web development.
+
+#### Presenting the data 
+
+In this workshop we will be using a third party library called [react-native-paper](https://callstack.github.io/react-native-paper/card.html) where it provide us with Material Designed style component where we could present our data in a modern and presentable fashion.
+
+1. Try to have a concept of the user interface, you can sketch out your own or refer to other application. 
+2. After having your own concept of UI, try to create the component that are required in Snack Expo. 
+
+{% hint style="info" %}
+**Icons**
+
+Expo have a built in set of open source icon. Here's the [directory](https://expo.github.io/vector-icons/) for the full list of icon. Below we have an example on how to implement it.
+
+```jsx
+import { Ionicons } from '@expo/vector-icons';
+
+export default class IconExample extends React.Component {
+  render() {
+    return (
+      <Ionicons name="md-checkmark-circle" size={32} color="green" />
+    );
+  }
+}
+```
+
+Here's the [official documentation](https://docs.expo.io/versions/latest/guides/icons/) from expo for more details 
+{% endhint %}
 
 ## Workshop Evaluation
 
