@@ -112,7 +112,6 @@ export default class App extends React.Component {
 
   render() {
     return (
-
       <View style={styles.container}>
         <Text style={styles.paragraph}>{this.state.text}</Text>
         <TextInput
@@ -137,7 +136,9 @@ Props allow to pass value or even function to component we created.
 class MyComponent extends React.Component { 
   render() {
     return (
-      <View>{this.props.text}</View>
+      <View>
+        <Text>{this.props.text}</Text>
+      </View>
     )
   }
 }
